@@ -1,0 +1,97 @@
+{
+  "info": {
+    "_postman_id": "c2b778b2-f271-49d3-a909-b7cb7af9a5c0",
+    "name": "BUILDER",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "9453598"
+  },
+  "item": [
+    {
+      "name": "BAIXAR_MODELO_DE_PLANILHA",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/depara/modelo",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "depara",
+            "modelo"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "IMPORT_CONTA_CONTABIL_OPERADORA",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "arquivo",
+              "type": "file",
+              "uuid": "26eb5e50-a891-4936-bb1b-dca3883925fe",
+              "src": "/C:/Users/PC/Downloads/modeloDePara_conta_contabil_insert_solus.xlsx"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/depara/conta-contabil-operadora/import",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "depara",
+            "conta-contabil-operadora",
+            "import"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "IMPORT_CENTRO_CUSTO",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "arquivo",
+              "type": "file",
+              "uuid": "26eb5e50-a891-4936-bb1b-dca3883925fe",
+              "src": "/C:/Users/PC/Downloads/modeloDePara_conta_contabil_insert_solus.xlsx"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/depara/centro-custo/import",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "depara",
+            "centro-custo",
+            "import"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
