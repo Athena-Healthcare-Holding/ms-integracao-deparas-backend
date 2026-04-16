@@ -34,6 +34,11 @@ springdoc:
 depara:
   auditoria:
     path: ./src/main/resources/executados
+    cleanup:
+      retention-days: 5
+      cron: "0 0 0 * * *"
+      #cron: "0 */3 * * * *" # descomente essa linha para rodar a limpeza a cada 3 minutos e testar
+
 
 #Console H2: http://localhost:8080/h2-console
 #JDBC URL: jdbc:h2:mem:depara_db
